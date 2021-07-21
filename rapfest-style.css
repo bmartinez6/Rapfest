@@ -1,0 +1,277 @@
+#imgContainer {
+    background-image: url(joel-muniz-QadWZdWSe_8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#topNavbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#topNavbar2 {
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-brand>img {
+    padding-left: 20px;
+}
+
+.nav-item {
+    padding: 0 10px 0 10px;
+}
+
+.dropbtn {
+    background-color: rgba(43, 43, 43, 0.3);
+    color: white!important;
+    font-family: 'Quicksand', sans-serif;
+    margin-right: 40px;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border: none;
+    border-bottom: 3px solid white!important;
+}
+
+.dropbtn:hover {
+    background-color: white;
+    color: black!important;
+    border: none;
+    border-bottom: 3px solid black!important;
+}
+
+.dropbtn:active {
+    border: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: black;
+    color: white;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.text-end {
+    padding-right: 20px;
+}
+
+.text-end button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+/* ---------- nav ends ---------- */
+
+/* ---------- news ticker ---------- */
+
+.tcontainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+  
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 25s;
+}
+
+.ticker-move:hover{
+    animation-play-state: paused; 
+}
+
+.ticker-item{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    color: white;
+    display: inline-block; 
+    padding: 5px 5rem;
+}
+
+/* ---------- news ticker ends ---------- */
+
+h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 30px 0 30px 100px;
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+h4 {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    padding: 20px 75px;
+    color: black;
+}
+
+h5 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: black;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+    background-color: black;
+    padding: 20px;
+}
+
+footer nav {
+    margin-bottom: 20px;
+}
+
+#footerAlpha {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+#footerAlpha li {
+    float: left;
+}
+
+#footerAlpha li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+}
+
+footer .form-control {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 15px;
+    float: left;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+footer img {
+    width: 400px!important;
+    margin-left: 130px;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+}
+
+#floatingInput {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+#floatingInput::placeholder {
+    color: white;
+}
+
+.input-group-btn {
+    padding-left: 10px;
+}
+
+.input-group-btn button {
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+.input-group-btn button:hover {
+    color: rgb(20, 20, 20);
+    background-color: white;
+}
+
+#floatingInputLabel {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+footer a {
+    font-family: 'Roboto Mono', monospace;
+    font-size: .8rem;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#footerUL {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}

@@ -130,7 +130,112 @@
 
 /* ---------- news ticker ends ---------- */
 
+/* ---------- digital covers ---------- */
+
+.dc-top {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background-color: black;
+}
+
+#dc-sides-h5 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: white;
+    padding: 10px 5px;
+    position: -webkit-sticky!important;
+    position: sticky!important;
+    top: 10px!important;
+}
+
+.dc-sides {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dc-scroll {
+    display: flex!important;
+    overflow: hidden;
+    height: 70vw;
+}
+
+.dc-scroll img {
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 20px 0;
+    box-sizing: border-box;
+    transition: opacity .2s;
+}
+
+.dc-scroll:hover img {
+    opacity: 0.5;
+}
+   
+.dc-scroll img:hover {
+    opacity: 1;
+}
+   
+.dc-scroll .img-column {
+   animation: var(--animation, none) 16s infinite linear;
+}
+   
+.dc-scroll .img-column:hover {
+   animation-play-state: paused;
+}
+   
+.dc-scroll .img-column:nth-of-type(odd) {
+    align-self: flex-end;
+
+}
+   
+@keyframes slide {
+    to {
+      -webkit-transform: translateY(var(--direction, -50%));
+              transform: translateY(var(--direction, -50%));
+    }
+}
+
+/* ---------- digital covers ends ---------- */
+
 /* ---------- album review page content ---------- */
+
+#album-land {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#album-land .row {
+    margin: 0 auto;
+    padding: 0px;
+    display: inline-flex;
+}
+
+#album-land .row .col-6 {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+#album-land-left {
+    border-right: .5px solid white;
+    float: left;
+}
+
+#album-land-right {
+    border-left: .5px solid white;
+    float: right;
+}
+
+#album-land img {
+    width: 100%;
+    height: auto;
+}
 
 h3 {
     font-family: 'Anton', sans-serif;
@@ -144,7 +249,7 @@ h3 {
 h4 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    padding: 30px 0;
+    padding: 30px 0 50px 0;
     color: black;
     flex: 1;
 }
@@ -153,7 +258,7 @@ h4 {
     text-align: right;
 }
 
-h5 {
+#album-h5 {
     font-family: 'Anton', sans-serif;
     font-size: 3rem;
     writing-mode: vertical-rl;
@@ -227,10 +332,7 @@ h6 {
     font-weight: 700;
     color: black;
     letter-spacing: 20px;
-    margin: -5px 0;
-    display: inline-flex!important;
-    align-items: center!important;
-    justify-content: center!important;
+    margin: -5px 0 -5px 150px;
 }
 
 .album-bottom {
@@ -266,7 +368,6 @@ h6 {
     font-size: 1.5rem;
     background-color: white;
     position: absolute;
-    bottom: -282px;
     padding: 20px 60px 20px 0;
     margin-left: -30px;
     letter-spacing: 5px;
@@ -277,7 +378,6 @@ h6 {
 /* ---------- footer ---------- */
 
 footer {
-    margin-top: 50px;
     background-color: black;
     padding: 20px;
 }

@@ -113,7 +113,7 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-name: ticker;
-    animation-duration: 25s;
+    animation-duration: 30s;
 }
 
 .ticker-move:hover{
@@ -183,7 +183,7 @@
 }
    
 .dc-scroll .img-column {
-   animation: var(--animation, none) 16s infinite linear;
+   animation: var(--animation, none) 20s infinite linear;
 }
    
 .dc-scroll .img-column:hover {
@@ -200,6 +200,21 @@
       -webkit-transform: translateY(var(--direction, -50%));
               transform: translateY(var(--direction, -50%));
     }
+}
+
+#dc-article {
+    flex: 0;
+    display: inline-flex;
+}
+
+#dc-article-img {
+    background-image: url(dc-article-demo.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+#dc-article-rest {
+    width: 50%;
 }
 
 /* ---------- digital covers ends ---------- */
@@ -249,7 +264,7 @@ h3 {
 h4 {
     font-family: 'Righteous', cursive;
     font-size: 3rem;
-    padding: 30px 0 50px 0;
+    padding-top: 30px;
     color: black;
     flex: 1;
 }
@@ -284,11 +299,13 @@ h4 {
 }
 
 .album-left {
+    width: 45%;
     float: left;
     margin-left: 75px;
 }
 
 .album-right {
+    width: 45%;
     float: right;
     margin-right: 75px;
 }
@@ -297,6 +314,7 @@ h4 {
     width: 100%;
     flex: 0;
     border-right: 5px solid black;
+    margin-top: 50px;
     margin-bottom: 0;
 }
 
@@ -332,7 +350,6 @@ h6 {
     font-weight: 700;
     color: black;
     letter-spacing: 20px;
-    margin: -5px 0 -5px 150px;
 }
 
 .album-bottom {
@@ -342,37 +359,55 @@ h6 {
 }
 
 .album-artist {
-    height: 67.4%;
+    height: 60.1%;
     font-family: 'Kanit', sans-serif;
     font-size: 4rem;
     font-weight: 700;
     writing-mode: vertical-rl;
     text-orientation: upright;
+    letter-spacing: -10px;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid black;
 }
 
 .album-cover {
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .album-cover>img {
     width: 100%;
     height: auto;
+    position: absolute;
+    z-index: 2;
 }
 
 #album-layer {
+    position: relative;
+    bottom: -602px;
+    z-index: 3;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    color: black;
     font-size: 1.5rem;
     background-color: white;
-    position: absolute;
-    padding: 20px 60px 20px 0;
-    margin-left: -30px;
+    padding: 20px 60px 20px 100px;
+    margin-left: -101px;
     letter-spacing: 5px;
     border-top: 5px solid black;
-    border-bottom: 5px solid black;
+}
+
+#album-layer::after {
+    content: '';
+    width: 662 px;
+    height: 5px;
+    background: black;
+    position: absolute;
+    left: 101px;
+    bottom: -5px;
 }
 
 /* ---------- footer ---------- */
